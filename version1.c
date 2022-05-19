@@ -11,7 +11,12 @@ void print(int **matrix,int n,int m){
 		for(int j= 1; j<=m; ++j)
 		{
              if(matrix[i][j])printf("\e[41m  ");
-             else  printf("\e[100m  ");
+            else  printf("\e[100m  ");
+            //if(matrix[i][j])
+            //printf("%d",matrix[i][j]);
+            //else  {
+                
+            //}
 		}
 			printf("\e[0m  ");
         puts("");
@@ -46,16 +51,39 @@ void next(int **matrix, int n,int m){
     }
     free(aux);
 }
-
+void read_file_in_matrix(int**matrix){
+    FILE* fp=fopen("matrix.txt","r");
+    int a=1,b=1;
+    char ch;
+    do {
+        ch=fgetc(fp);
+        
+        if(ch =='\n'){
+            a++;
+            b=1;
+            //printf("\n");
+        }
+        else if (ch=='1'||ch=='0'){
+            matrix[a][b]=ch-48;
+           // printf("%d",matrix[a][b]);
+            b++;
+        }
+        
+    } while (ch != EOF);
+}
 int main(){
-    int n=10,m=15;
+    int n=10,m=10;
     int **matrix;
     matrix=(int **)malloc(sizeof(int *)*(n+2));
     for(int i=0;i<n+2;i++)
     matrix[i]=(int *)malloc(sizeof(int)*(m+2));
 
-    matrix[5][5]=matrix[5][6]=matrix[5][7]=matrix[5][8]=matrix[5][9]=1;
-
+    // matrix[5][5]=matrix[5][6]=matrix[5][7]=matrix[5][8]=matrix[5][9]=1;
+    
+    read_file_in_matrix(matrix);
+    
+    
+    
     print(matrix,n,m);
     for(int i=0;i<15;i++)
     {
