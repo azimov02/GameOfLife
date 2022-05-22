@@ -66,7 +66,7 @@ void read_file_in_matrix(int**matrix){
         
         if(ch =='\n'){
             a++;
-            b=1;
+            b=0;
             //printf("\n");
         }
         else if (ch=='1'||ch=='0'){
