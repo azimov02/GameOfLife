@@ -6,9 +6,9 @@
 
 void print(int **matrix,int n,int m){
     printf("\033[H\033[J");//clears output
-	for(int i= 1; i<=n; ++i)
+	for(int i=0; i<n; ++i)
 	{
-		for(int j= 1; j<=m; ++j)
+		for(int j=0; j<m; ++j)
 		{
              if(matrix[i][j])printf("\e[41m  ");
             else  printf("\e[100m  ");
@@ -26,26 +26,32 @@ void print(int **matrix,int n,int m){
 
 void next(int **matrix, int n,int m){
     int **aux;
-    aux=(int **)malloc(sizeof(int *)*(n+2));
-    for(int i=0;i<n+2;i++)
-    aux[i]=(int *)calloc(m+2,sizeof(int));
+    aux=(int **)malloc(sizeof(int *)*n);
+    for(int i=0;i<n;i++)
+    aux[i]=(int *)calloc(m,sizeof(int));
 
-    for(int i=0;i<n+2;i++){
-        for(int j=0;j<m+1;j++){
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
             aux[i][j]=matrix[i][j];
         }
     }
-    for(int i=1;i<=n;i++){
-        for(int j=1;j<=m;j++){
-            int d=matrix[i-1][j-1]+matrix[i-1][j]+matrix[i-1][j+1]+
-            matrix[i][j-1]+matrix[i][j+1]+matrix[i+1][j-1]+
-            matrix[i+1][j]+matrix[i+1][j+1];
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            int d=0;
+            if(i && j)d+=matrix[i-1][j-1];
+            if(i)d+=matrix[i-1][j];
+            if(i && j<m-1)d+=matrix[i-1][j+1];
+            if(j)d+=matrix[i][j-1];
+            if(j<m-1)d+=matrix[i][j+1];
+            if(i<n-1 && j)d+=matrix[i+1][j-1];
+            if(i<n-1)d+=matrix[i+1][j];
+            if(i<n-1 && j<m-1)d+=matrix[i+1][j+1];
             if(matrix[i][j]==0 && d==3)aux[i][j]=1;
             if(matrix[i][j]==1 && d!=2 && d!=3)aux[i][j]=0;
         }
     }
-    for(int i=0;i<n+2;i++){
-        for(int j=0;j<m+1;j++){
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
             matrix[i][j]=aux[i][j];
         }
     }
@@ -53,7 +59,7 @@ void next(int **matrix, int n,int m){
 }
 void read_file_in_matrix(int**matrix){
     FILE* fp=fopen("matrix.txt","r");
-    int a=1,b=1;
+    int a=0,b=0;
     char ch;
     do {
         ch=fgetc(fp);
@@ -72,11 +78,11 @@ void read_file_in_matrix(int**matrix){
     } while (ch != EOF);
 }
 int main(){
-    int n=10,m=10;
+    int n=12,m=12;
     int **matrix;
-    matrix=(int **)malloc(sizeof(int *)*(n+2));
-    for(int i=0;i<n+2;i++)
-    matrix[i]=(int *)malloc(sizeof(int)*(m+2));
+    matrix=(int **)malloc(sizeof(int*)*n);
+    for(int i=0;i<n;i++)
+    matrix[i]=(int *)malloc(sizeof(int)*m);
 
     // matrix[5][5]=matrix[5][6]=matrix[5][7]=matrix[5][8]=matrix[5][9]=1;
     
