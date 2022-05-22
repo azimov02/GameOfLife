@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/step3.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+unistd.h
+-
+

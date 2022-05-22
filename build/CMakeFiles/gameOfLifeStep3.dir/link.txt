@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/gameOfLifeStep3.dir/step3.c.o  -o gameOfLifeStep3 
