@@ -6,5 +6,5 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = -I/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/lib 
+C_INCLUDES = 
 

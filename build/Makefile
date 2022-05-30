@@ -123,6 +123,32 @@ gameOfLifeStep3/fast:
 	$(MAKE) -f CMakeFiles/gameOfLifeStep3.dir/build.make CMakeFiles/gameOfLifeStep3.dir/build
 .PHONY : gameOfLifeStep3/fast
 
+#=============================================================================
+# Target rules for targets named readInput
+
+# Build rule for target.
+readInput: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 readInput
+.PHONY : readInput
+
+# fast build rule for target.
+readInput/fast:
+	$(MAKE) -f lib/CMakeFiles/readInput.dir/build.make lib/CMakeFiles/readInput.dir/build
+.PHONY : readInput/fast
+
+#=============================================================================
+# Target rules for targets named board
+
+# Build rule for target.
+board: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 board
+.PHONY : board
+
+# fast build rule for target.
+board/fast:
+	$(MAKE) -f lib/CMakeFiles/board.dir/build.make lib/CMakeFiles/board.dir/build
+.PHONY : board/fast
+
 step3.o: step3.c.o
 
 .PHONY : step3.o
@@ -159,6 +185,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... gameOfLifeStep3"
+	@echo "... readInput"
+	@echo "... board"
 	@echo "... step3.o"
 	@echo "... step3.i"
 	@echo "... step3.s"

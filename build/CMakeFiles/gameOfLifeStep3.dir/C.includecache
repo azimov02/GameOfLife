@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/lib/board.h
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+
+/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/lib/readInput.h
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+
 /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/step3.c
 stdio.h
 -
@@ -15,4 +31,8 @@ string.h
 -
 unistd.h
 -
+lib/board.h
+/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/lib/board.h
+lib/readInput.h
+/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/lib/readInput.h
 

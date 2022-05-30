@@ -79,6 +79,8 @@ gameOfLifeStep3_EXTERNAL_OBJECTS =
 
 gameOfLifeStep3: CMakeFiles/gameOfLifeStep3.dir/step3.c.o
 gameOfLifeStep3: CMakeFiles/gameOfLifeStep3.dir/build.make
+gameOfLifeStep3: lib/libboard.a
+gameOfLifeStep3: lib/libreadInput.a
 gameOfLifeStep3: CMakeFiles/gameOfLifeStep3.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable gameOfLifeStep3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gameOfLifeStep3.dir/link.txt --verbose=$(VERBOSE)
