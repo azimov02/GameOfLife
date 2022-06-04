@@ -60,15 +60,15 @@ include lib/CMakeFiles/board.dir/flags.make
 lib/CMakeFiles/board.dir/board.c.o: lib/CMakeFiles/board.dir/flags.make
 lib/CMakeFiles/board.dir/board.c.o: ../lib/board.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/CMakeFiles/board.dir/board.c.o"
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/board.dir/board.c.o   -c /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/lib/board.c
+	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/lib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/board.dir/board.c.o   -c /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/lib/board.c
 
 lib/CMakeFiles/board.dir/board.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/board.dir/board.c.i"
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/lib/board.c > CMakeFiles/board.dir/board.c.i
+	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/lib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/lib/board.c > CMakeFiles/board.dir/board.c.i
 
 lib/CMakeFiles/board.dir/board.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/board.dir/board.c.s"
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/lib/board.c -o CMakeFiles/board.dir/board.c.s
+	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/lib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/lib/board.c -o CMakeFiles/board.dir/board.c.s
 
 # Object files for target board
 board_OBJECTS = \

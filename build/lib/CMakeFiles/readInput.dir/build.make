@@ -60,15 +60,15 @@ include lib/CMakeFiles/readInput.dir/flags.make
 lib/CMakeFiles/readInput.dir/readInput.c.o: lib/CMakeFiles/readInput.dir/flags.make
 lib/CMakeFiles/readInput.dir/readInput.c.o: ../lib/readInput.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/CMakeFiles/readInput.dir/readInput.c.o"
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/readInput.dir/readInput.c.o   -c /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/lib/readInput.c
+	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/lib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/readInput.dir/readInput.c.o   -c /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/lib/readInput.c
 
 lib/CMakeFiles/readInput.dir/readInput.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/readInput.dir/readInput.c.i"
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/lib/readInput.c > CMakeFiles/readInput.dir/readInput.c.i
+	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/lib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/lib/readInput.c > CMakeFiles/readInput.dir/readInput.c.i
 
 lib/CMakeFiles/readInput.dir/readInput.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/readInput.dir/readInput.c.s"
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/lib/readInput.c -o CMakeFiles/readInput.dir/readInput.c.s
+	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/lib && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/lib/readInput.c -o CMakeFiles/readInput.dir/readInput.c.s
 
 # Object files for target readInput
 readInput_OBJECTS = \

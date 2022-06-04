@@ -1,1 +1,1 @@
-/usr/bin/cc    CMakeFiles/gameOfLifeStep3.dir/step3.c.o  -o gameOfLifeStep3  lib/libboard.a lib/libreadInput.a 
+/usr/bin/gcc -g   CMakeFiles/gameOfLifeStep3.dir/step3.c.o  -o gameOfLifeStep3  lib/libboard.a lib/libreadInput.a 

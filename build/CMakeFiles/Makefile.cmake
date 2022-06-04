@@ -12,6 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
   "../lib/CMakeLists.txt"
+  "../tests/CMakeLists.txt"
   "/usr/share/cmake-3.16/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
@@ -43,6 +44,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -50,4 +52,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/gameOfLifeStep3.dir/DependInfo.cmake"
   "lib/CMakeFiles/readInput.dir/DependInfo.cmake"
   "lib/CMakeFiles/board.dir/DependInfo.cmake"
+  "tests/CMakeFiles/test.dir/DependInfo.cmake"
   )

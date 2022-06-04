@@ -5,3 +5,6 @@
 /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/lib/CMakeFiles/edit_cache.dir
 /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/lib/CMakeFiles/readInput.dir
 /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/lib/CMakeFiles/board.dir
+/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/tests/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/tests/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/tests/CMakeFiles/test.dir
