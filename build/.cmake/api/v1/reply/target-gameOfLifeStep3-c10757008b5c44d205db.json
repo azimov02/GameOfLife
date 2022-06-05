@@ -12,7 +12,8 @@
 		[
 			"add_executable",
 			"target_link_libraries",
-			"target_include_directories"
+			"target_include_directories",
+			"include_directories"
 		],
 		"files" : 
 		[
@@ -26,25 +27,37 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 8,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 10,
+				"line" : 12,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 11,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 14,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 9,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 7,
 				"parent" : 0
 			}
 		]
@@ -55,14 +68,19 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g  "
+					"fragment" : " "
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 4,
-					"path" : "/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/lib"
+					"backtrace" : 5,
+					"path" : "/home/user/DT/GameOfLife/lib"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/usr/local/include/SDL2"
 				}
 			],
 			"language" : "C",
@@ -89,12 +107,12 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "",
-				"role" : "flags"
+				"fragment" : "-Wl,-rpath,/usr/local/lib",
+				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
@@ -104,6 +122,11 @@
 			{
 				"backtrace" : 3,
 				"fragment" : "lib/libreadInput.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/usr/local/lib/libSDL2.so",
 				"role" : "libraries"
 			}
 		],

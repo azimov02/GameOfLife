@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife
+CMAKE_SOURCE_DIR = /home/user/DT/GameOfLife
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build
+CMAKE_BINARY_DIR = /home/user/DT/GameOfLife/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/CMakeFiles /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/lib/CMakeFiles/progress.marks
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/CMakeFiles 0
+	cd /home/user/DT/GameOfLife/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/DT/GameOfLife/build/CMakeFiles /home/user/DT/GameOfLife/build/lib/CMakeFiles/progress.marks
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/DT/GameOfLife/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 lib/clean
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/user/DT/GameOfLife/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/CMakeFiles/readInput.dir/rule:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/readInput.dir/rule
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/readInput.dir/rule
 .PHONY : lib/CMakeFiles/readInput.dir/rule
 
 # Convenience name for target.
@@ -122,12 +122,12 @@ readInput: lib/CMakeFiles/readInput.dir/rule
 
 # fast build rule for target.
 readInput/fast:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f lib/CMakeFiles/readInput.dir/build.make lib/CMakeFiles/readInput.dir/build
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f lib/CMakeFiles/readInput.dir/build.make lib/CMakeFiles/readInput.dir/build
 .PHONY : readInput/fast
 
 # Convenience name for target.
 lib/CMakeFiles/board.dir/rule:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/board.dir/rule
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/board.dir/rule
 .PHONY : lib/CMakeFiles/board.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ board: lib/CMakeFiles/board.dir/rule
 
 # fast build rule for target.
 board/fast:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f lib/CMakeFiles/board.dir/build.make lib/CMakeFiles/board.dir/build
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f lib/CMakeFiles/board.dir/build.make lib/CMakeFiles/board.dir/build
 .PHONY : board/fast
 
 board.o: board.c.o
@@ -146,7 +146,7 @@ board.o: board.c.o
 
 # target to build an object file
 board.c.o:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f lib/CMakeFiles/board.dir/build.make lib/CMakeFiles/board.dir/board.c.o
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f lib/CMakeFiles/board.dir/build.make lib/CMakeFiles/board.dir/board.c.o
 .PHONY : board.c.o
 
 board.i: board.c.i
@@ -155,7 +155,7 @@ board.i: board.c.i
 
 # target to preprocess a source file
 board.c.i:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f lib/CMakeFiles/board.dir/build.make lib/CMakeFiles/board.dir/board.c.i
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f lib/CMakeFiles/board.dir/build.make lib/CMakeFiles/board.dir/board.c.i
 .PHONY : board.c.i
 
 board.s: board.c.s
@@ -164,7 +164,7 @@ board.s: board.c.s
 
 # target to generate assembly for a file
 board.c.s:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f lib/CMakeFiles/board.dir/build.make lib/CMakeFiles/board.dir/board.c.s
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f lib/CMakeFiles/board.dir/build.make lib/CMakeFiles/board.dir/board.c.s
 .PHONY : board.c.s
 
 readInput.o: readInput.c.o
@@ -173,7 +173,7 @@ readInput.o: readInput.c.o
 
 # target to build an object file
 readInput.c.o:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f lib/CMakeFiles/readInput.dir/build.make lib/CMakeFiles/readInput.dir/readInput.c.o
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f lib/CMakeFiles/readInput.dir/build.make lib/CMakeFiles/readInput.dir/readInput.c.o
 .PHONY : readInput.c.o
 
 readInput.i: readInput.c.i
@@ -182,7 +182,7 @@ readInput.i: readInput.c.i
 
 # target to preprocess a source file
 readInput.c.i:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f lib/CMakeFiles/readInput.dir/build.make lib/CMakeFiles/readInput.dir/readInput.c.i
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f lib/CMakeFiles/readInput.dir/build.make lib/CMakeFiles/readInput.dir/readInput.c.i
 .PHONY : readInput.c.i
 
 readInput.s: readInput.c.s
@@ -191,7 +191,7 @@ readInput.s: readInput.c.s
 
 # target to generate assembly for a file
 readInput.c.s:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f lib/CMakeFiles/readInput.dir/build.make lib/CMakeFiles/readInput.dir/readInput.c.s
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f lib/CMakeFiles/readInput.dir/build.make lib/CMakeFiles/readInput.dir/readInput.c.s
 .PHONY : readInput.c.s
 
 # Help Target
@@ -221,6 +221,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/user/DT/GameOfLife/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

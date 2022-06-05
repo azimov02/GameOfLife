@@ -1,24 +1,69 @@
 #include "board.h"
+#include <SDL2/SDL.h>
+#include <assert.h>
+#include <stdbool.h>
 
-void print(int **matrix,int n,int m){
-    printf("\033[H\033[J");//clears output
-	for(int i=0; i<n; ++i)
+void display(int **matrix,int n,int m){
+
+int frame_delay = 500;
+int max=n>m?n:m;
+int cell_width = 800/max;
+int margin=10,window_heigth=cell_width*n,window_width=cell_width*m;
+	if (SDL_Init(SDL_INIT_VIDEO) != 0)
 	{
-		for(int j=0; j<m; ++j)
-		{   
-             if(matrix[i][j])printf("\e[41m  ");
-            else  printf("\e[100m  ");
-            //if(matrix[i][j])
-            //printf("%d",matrix[i][j]);
-            //else  {
-                
-            //}
-		}
-			printf("\e[0m  ");
-        puts("");
+		printf("Error at SDL initialization\n");
+		exit(1);
 	}
-    usleep(750000);
+	SDL_Window* window = SDL_CreateWindow("Demo_SDL", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, window_width+2*margin, window_heigth+2*margin,
+						  SDL_WINDOW_SHOWN);
+	SDL_Renderer* renderer = SDL_CreateRenderer(window, -1,SDL_RENDERER_ACCELERATED|SDL_RENDERER_PRESENTVSYNC);
+	assert (renderer != NULL);
+
+	bool quit = false;
+	while (!quit)
+	{
+		SDL_Event event;
+		while (!quit && SDL_PollEvent(&event))
+		{
+			switch (event.type)
+			{
+			case SDL_QUIT:
+				quit = true;
+				free(matrix);
+				break;
+			}
+		}	
+	if(quit)break;
+	SDL_SetRenderDrawColor(renderer, 0,0,0,255);
+	SDL_RenderClear(renderer);
+
+
+	SDL_SetRenderDrawColor(renderer, 0,255,0,255);
+
+	SDL_Rect rect={0,0,cell_width,cell_width};
+
+	for (int i=0;i<n;++i)
+		for (int j=0;j<m;++j)
+		{
+			if( matrix[i][j]!=0)
+			{
+				rect.x = margin + j * cell_width; 
+				rect.y = margin + i * cell_width;
+				SDL_RenderFillRect(renderer, &rect);
+			}
+		}
+
+		SDL_RenderPresent(renderer);
+		SDL_Delay(frame_delay);
+		next(matrix,n,m);
 }
+	
+  	SDL_Quit();
+
+}
+
+
+
 
 void next(int **matrix, int n,int m){
     int **aux;
@@ -53,3 +98,4 @@ void next(int **matrix, int n,int m){
     }
     free(aux);
 }
+

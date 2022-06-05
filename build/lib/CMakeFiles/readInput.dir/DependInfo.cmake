@@ -4,12 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/lib/readInput.c" "/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/lib/CMakeFiles/readInput.dir/readInput.c.o"
+  "/home/user/DT/GameOfLife/lib/readInput.c" "/home/user/DT/GameOfLife/build/lib/CMakeFiles/readInput.dir/readInput.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/local/include/SDL2"
   )
 
 # Targets to which this target links.

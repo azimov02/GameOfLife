@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife
+CMAKE_SOURCE_DIR = /home/user/DT/GameOfLife
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build
+CMAKE_BINARY_DIR = /home/user/DT/GameOfLife/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -118,14 +118,14 @@ CMakeFiles/gameOfLifeStep3.dir/all: lib/CMakeFiles/readInput.dir/all
 CMakeFiles/gameOfLifeStep3.dir/all: lib/CMakeFiles/board.dir/all
 	$(MAKE) -f CMakeFiles/gameOfLifeStep3.dir/build.make CMakeFiles/gameOfLifeStep3.dir/depend
 	$(MAKE) -f CMakeFiles/gameOfLifeStep3.dir/build.make CMakeFiles/gameOfLifeStep3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/CMakeFiles --progress-num=3,4 "Built target gameOfLifeStep3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/DT/GameOfLife/build/CMakeFiles --progress-num=3,4 "Built target gameOfLifeStep3"
 .PHONY : CMakeFiles/gameOfLifeStep3.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gameOfLifeStep3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/DT/GameOfLife/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gameOfLifeStep3.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/DT/GameOfLife/build/CMakeFiles 0
 .PHONY : CMakeFiles/gameOfLifeStep3.dir/rule
 
 # Convenience name for target.
@@ -145,14 +145,14 @@ CMakeFiles/gameOfLifeStep3.dir/clean:
 lib/CMakeFiles/readInput.dir/all:
 	$(MAKE) -f lib/CMakeFiles/readInput.dir/build.make lib/CMakeFiles/readInput.dir/depend
 	$(MAKE) -f lib/CMakeFiles/readInput.dir/build.make lib/CMakeFiles/readInput.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/CMakeFiles --progress-num=5,6 "Built target readInput"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/DT/GameOfLife/build/CMakeFiles --progress-num=5,6 "Built target readInput"
 .PHONY : lib/CMakeFiles/readInput.dir/all
 
 # Build rule for subdir invocation for target.
 lib/CMakeFiles/readInput.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/DT/GameOfLife/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/readInput.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/DT/GameOfLife/build/CMakeFiles 0
 .PHONY : lib/CMakeFiles/readInput.dir/rule
 
 # Convenience name for target.
@@ -172,14 +172,14 @@ lib/CMakeFiles/readInput.dir/clean:
 lib/CMakeFiles/board.dir/all:
 	$(MAKE) -f lib/CMakeFiles/board.dir/build.make lib/CMakeFiles/board.dir/depend
 	$(MAKE) -f lib/CMakeFiles/board.dir/build.make lib/CMakeFiles/board.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/CMakeFiles --progress-num=1,2 "Built target board"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/DT/GameOfLife/build/CMakeFiles --progress-num=1,2 "Built target board"
 .PHONY : lib/CMakeFiles/board.dir/all
 
 # Build rule for subdir invocation for target.
 lib/CMakeFiles/board.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/DT/GameOfLife/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/board.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/DT/GameOfLife/build/CMakeFiles 0
 .PHONY : lib/CMakeFiles/board.dir/rule
 
 # Convenience name for target.
@@ -199,14 +199,14 @@ lib/CMakeFiles/board.dir/clean:
 tests/CMakeFiles/test.dir/all:
 	$(MAKE) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/depend
 	$(MAKE) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/CMakeFiles --progress-num=7,8 "Built target test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/DT/GameOfLife/build/CMakeFiles --progress-num=7,8 "Built target test"
 .PHONY : tests/CMakeFiles/test.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/DT/GameOfLife/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/DT/GameOfLife/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/test.dir/rule
 
 # Convenience name for target.

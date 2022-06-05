@@ -5,23 +5,13 @@
 #include "lib/board.h"
 #include "lib/readInput.h"
 int main(){
-    int n=10,m=10;
-    int **matrix;
-    matrix=(int **)malloc(sizeof(int*)*n);
-    for(int i=0;i<n;i++)
-    matrix[i]=(int *)malloc(sizeof(int)*m);
+    int **matrix,n,m;
+    
+    matrix=read_file_in_matrix("../start_configs/pulsar.txt",&n,&m);//reading configuration from file
 
-    // matrix[5][5]=matrix[5][6]=matrix[5][7]=matrix[5][8]=matrix[5][9]=1;
-    
-    read_file_in_matrix(matrix);
-    
-    
-    print(matrix,n,m);
-    for(int i=0;i<15;i++)
-    {
-        next(matrix,n,m);
-        print(matrix,n,m);
-    }
+    printf("%d %d\n",n,m);
+    // for(int i=0;i<n;i++){puts("");for(int j=0;j<m;j++)printf("%d",matrix[i][j]);}
+    display(matrix,n,m);
 
     return 0;
 }

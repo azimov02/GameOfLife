@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/tests/test.c
+/home/user/DT/GameOfLife/tests/test.c
 stdio.h
 -
 string.h
@@ -20,5 +20,5 @@ sys/wait.h
 fcntl.h
 -
 CUnit/Basic.h
-/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/tests/CUnit/Basic.h
+/home/user/DT/GameOfLife/tests/CUnit/Basic.h
 

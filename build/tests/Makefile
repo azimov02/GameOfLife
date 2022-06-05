@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife
+CMAKE_SOURCE_DIR = /home/user/DT/GameOfLife
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build
+CMAKE_BINARY_DIR = /home/user/DT/GameOfLife/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/CMakeFiles /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/tests/CMakeFiles/progress.marks
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build/CMakeFiles 0
+	cd /home/user/DT/GameOfLife/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/DT/GameOfLife/build/CMakeFiles /home/user/DT/GameOfLife/build/tests/CMakeFiles/progress.marks
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/DT/GameOfLife/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/user/DT/GameOfLife/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/test.dir/rule:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test.dir/rule
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test.dir/rule
 .PHONY : tests/CMakeFiles/test.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ test: tests/CMakeFiles/test.dir/rule
 
 # fast build rule for target.
 test/fast:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/build
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/build
 .PHONY : test/fast
 
 test.o: test.c.o
@@ -131,7 +131,7 @@ test.o: test.c.o
 
 # target to build an object file
 test.c.o:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/test.c.o
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/test.c.o
 .PHONY : test.c.o
 
 test.i: test.c.i
@@ -140,7 +140,7 @@ test.i: test.c.i
 
 # target to preprocess a source file
 test.c.i:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/test.c.i
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/test.c.i
 .PHONY : test.c.i
 
 test.s: test.c.s
@@ -149,7 +149,7 @@ test.s: test.c.s
 
 # target to generate assembly for a file
 test.c.s:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(MAKE) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/test.c.s
+	cd /home/user/DT/GameOfLife/build && $(MAKE) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/test.c.s
 .PHONY : test.c.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/user/DT/GameOfLife/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
