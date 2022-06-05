@@ -9,10 +9,3 @@ add_subdirectory(tests)
 target_include_directories(${PROJECT_NAME} PUBLIC lib)
 target_link_libraries(${PROJECT_NAME} board)
 target_link_libraries(${PROJECT_NAME} readInput)
-add_custom_target(
-  doc ALL
-  COMMAND $<$<CONFIG:Release>:${DOXYGEN_EXECUTABLE} ${doxyfile_in}>
-  WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/doc
-  COMMENT "Generating API documentation with Doxygen"
-  VERBATIM
-)

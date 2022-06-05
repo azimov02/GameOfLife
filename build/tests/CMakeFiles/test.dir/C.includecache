@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/tests/test.c
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+unistd.h
+-
+sys/wait.h
+-
+fcntl.h
+-
+CUnit/Basic.h
+/mnt/c/Users/Kenan/OneDrive/Desktop/UFAZ/DevTech/GameOfLife/tests/CUnit/Basic.h
+
