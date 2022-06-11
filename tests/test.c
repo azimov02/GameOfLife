@@ -32,9 +32,11 @@ int clean_suite1(void)
    }
 }
 
-
-//tests whether the sigrand function generates
-//either 2 or 3
+/**
+ * @brief Tests print() function 
+ * 
+ * testPRINT function tests whether matrix will be successfully printed and won't be null
+ */
 void testPRINT(void){
    int n=10,m=10;
     int **matrix;
@@ -44,6 +46,12 @@ void testPRINT(void){
    print(matrix,n,m);
    CU_ASSERT(matrix!=NULL);
 }
+/**
+ * @brief Tests next() function 
+ * 
+ * testNEXT function tests whether matrix will be filled correctly and won't return NULL after
+ * function call
+ */
 void testNEXT(void){
    int n=10,m=10;
    int **matrix;
@@ -53,7 +61,12 @@ void testNEXT(void){
    next(matrix,5,5);
    CU_ASSERT(matrix!=NULL);
 }
-
+/**
+ * @brief Tests read_file_in_matrix() function 
+ * 
+ * testREAD_FILE_IN_MATRIX function tests whether matrix will be successfully filled from
+ * one of the start configuration files
+ */
 void testREAD_FILE_IN_MATRIX(){
    int n=10,m=10;
    int **matrix;
@@ -93,18 +106,14 @@ int main()
 
 
 void print(int **matrix,int n,int m){
-   printf("\033[H\033[J");//clears output
+   printf("\033[H\033[J");
 	for(int i=0; i<n; ++i)
 	{
 		for(int j=0; j<m; ++j)
 		{   
              if(matrix[i][j])printf("\e[41m  ");
             else  printf("\e[100m  ");
-            //if(matrix[i][j])
-            //printf("%d",matrix[i][j]);
-            //else  {
-                
-            //}
+        
 		}
 			printf("\e[0m  ");
         puts("");
@@ -147,9 +156,9 @@ void next(int **matrix, int n,int m){
 }
 
 int read_file_in_matrix(int**matrix){
-   FILE* fp=fopen("matrix.txt","r");
+   FILE* fp=fopen("heart.txt","r");
    if (NULL == fp) {
-      fp=fopen("../matrix.txt","r");
+      fp=fopen("../start_configs/heart.txt","r");
    }
    if (fp==NULL)
    {
@@ -165,11 +174,9 @@ int read_file_in_matrix(int**matrix){
       if(ch =='\n'){
          a++;
          b=0;
-         //printf("\n");
       }
       else if (ch=='1'||ch=='0'){
          matrix[a][b]=ch-48;
-         // printf("%d",matrix[a][b]);
          b++;
       }
       

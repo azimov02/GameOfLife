@@ -2,7 +2,15 @@
 #include <SDL2/SDL.h>
 #include <assert.h>
 #include <stdbool.h>
-
+/**
+ * @brief Displays board
+ * @param matrix  board
+ * @param n number of rows
+ * @param m number of columns
+ * 
+ * This function creates window where it prints the board every 500ms. Then it uses next() functionc to get the next state of the game.
+ * This process keep repeating until the user presses X on the window.
+ */
 void display(int **matrix,int n,int m){
 
 int frame_delay = 500;
@@ -14,7 +22,7 @@ int margin=10,window_heigth=cell_width*n,window_width=cell_width*m;
 		printf("Error at SDL initialization\n");
 		exit(1);
 	}
-	SDL_Window* window = SDL_CreateWindow("Demo_SDL", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, window_width+2*margin, window_heigth+2*margin,
+	SDL_Window* window = SDL_CreateWindow("Game Of Life", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, window_width+2*margin, window_heigth+2*margin,
 						  SDL_WINDOW_SHOWN);
 	SDL_Renderer* renderer = SDL_CreateRenderer(window, -1,SDL_RENDERER_ACCELERATED|SDL_RENDERER_PRESENTVSYNC);
 	assert (renderer != NULL);
@@ -45,10 +53,10 @@ int margin=10,window_heigth=cell_width*n,window_width=cell_width*m;
 	for (int i=0;i<n;++i)
 		for (int j=0;j<m;++j)
 		{
-			if( matrix[i][j]!=0)
+			if(matrix[i][j])
 			{
-				rect.x = margin + j * cell_width; 
-				rect.y = margin + i * cell_width;
+				rect.x=margin+j*cell_width; 
+				rect.y=margin+i*cell_width;
 				SDL_RenderFillRect(renderer, &rect);
 			}
 		}
@@ -63,7 +71,16 @@ int margin=10,window_heigth=cell_width*n,window_width=cell_width*m;
 }
 
 
-
+/**
+ * @brief Returns state of the board at time t+1
+ * @param matrix  board
+ * @param n number of rows
+ * @param m number of columns
+ * The matrix signifies the state of board at time t. This function creates auxiliary matrix that will contains state of the board at time t+1.
+ *Rules of the game are applied to the original matrix to fill the auxiliary matrix. The the contents of aux matrix are copied to the original one.
+ *Thus matrix contains state at time t+1 
+ * 
+ */
 
 void next(int **matrix, int n,int m){
     int **aux;

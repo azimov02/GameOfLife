@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/user/DT/GameOfLife/lib/board.c
+/home/user/DT/work/GameOfLife/lib/board.c
 board.h
-/home/user/DT/GameOfLife/lib/board.h
+/home/user/DT/work/GameOfLife/lib/board.h
 SDL2/SDL.h
 -
 assert.h
@@ -16,7 +16,7 @@ assert.h
 stdbool.h
 -
 
-/home/user/DT/GameOfLife/lib/board.h
+/home/user/DT/work/GameOfLife/lib/board.h
 stdio.h
 -
 stdlib.h

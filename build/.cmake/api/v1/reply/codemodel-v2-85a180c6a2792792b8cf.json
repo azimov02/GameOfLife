@@ -19,7 +19,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						1
+						1,
+						2
 					]
 				},
 				{
@@ -34,7 +35,7 @@
 					"targetIndexes" : 
 					[
 						0,
-						2
+						3
 					]
 				},
 				{
@@ -48,7 +49,7 @@
 					"source" : "tests",
 					"targetIndexes" : 
 					[
-						3
+						4
 					]
 				}
 			],
@@ -68,7 +69,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -83,8 +85,15 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "doc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doc-9e32baa1b40d5ddac201.json",
+					"name" : "doc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "gameOfLifeStep3::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-gameOfLifeStep3-c10757008b5c44d205db.json",
+					"jsonFile" : "target-gameOfLifeStep3-f060f2d54652ac8df5db.json",
 					"name" : "gameOfLifeStep3",
 					"projectIndex" : 0
 				},
@@ -108,8 +117,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/user/DT/GameOfLife/build",
-		"source" : "/home/user/DT/GameOfLife"
+		"build" : "/home/user/DT/work/GameOfLife/build",
+		"source" : "/home/user/DT/work/GameOfLife"
 	},
 	"version" : 
 	{

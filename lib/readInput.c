@@ -1,9 +1,32 @@
 #include "readInput.h"
+#include <string.h>
 #include <stdlib.h>
+/**
+ * @brief Reads start configuration from txt files and turns it into the matrix of 0 and 1
+ * @param filename the name of the configuration
+ * @param n number of rows
+ * @param m number of columns
+ * @return int** returns pointer to the created matrix 
+ * 
+ * This function gets as parameters the name of file which contains one of possible start configurations of the game. 
+ *Then it allocates memory to create a matrix and copy the contents of the file to that matrix. In addition it writes
+ *the values of rows and colums to n and m. In case if file was not found it returns NULL pointer.
+ * 
+ * 
+ * 
+ */
 int ** read_file_in_matrix(char * filename,int *n,int *m){
-    FILE* fp=fopen(filename,"r");
-     if (NULL == fp) {
-        puts("File is not found");
+    char location1[100]="../start_configs/";
+    char location2[100]="./start_configs/";
+    for(int i=0;i<strlen(filename);i++){
+      location1[i+17]=filename[i];
+      location2[i+16]=filename[i];
+    }
+    FILE* fp=fopen(location1,"r");
+    if(fp==NULL){
+      fp=fopen(location2,"r");
+    }
+     if (fp==NULL) {
         return NULL;
     }
    int *aux,size=10000;
@@ -18,11 +41,9 @@ int ** read_file_in_matrix(char * filename,int *n,int *m){
             a++;
             *m=b;
             b=0;
-            //printf("\n");
         }
         else if (ch=='1'||ch=='0'){
             aux[i]=ch-48;
-           // printf("%d",matrix[a][b]);
             b++;
             i++;
         }
@@ -38,8 +59,6 @@ int ** read_file_in_matrix(char * filename,int *n,int *m){
       for(int j=0;j<(*m);j++)
       matrix[i][j]=aux[(*m)*i+j];
 
-    //   for(int i=0;i<*n;i++){puts("");
-    // for(int j=0;j<*m;j++)printf("%d ",matrix[i][j]);}
     free(aux);
    return matrix;
 }

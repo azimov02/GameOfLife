@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/DT/GameOfLife/lib
+# Install script for directory: /home/user/DT/work/GameOfLife/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/user/DT/GameOfLife/tests/test.c
+/home/user/DT/work/GameOfLife/tests/test.c
 stdio.h
 -
 string.h
@@ -20,5 +20,5 @@ sys/wait.h
 fcntl.h
 -
 CUnit/Basic.h
-/home/user/DT/GameOfLife/tests/CUnit/Basic.h
+/home/user/DT/work/GameOfLife/tests/CUnit/Basic.h
 

@@ -1,0 +1,64 @@
+.TH "/home/user/DT/GameOfLife/lib/board.c" 3 "Sat Jun 11 2022" "Game Of Life" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/user/DT/GameOfLife/lib/board.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'board\&.h'\fP
+.br
+\fC#include <SDL2/SDL\&.h>\fP
+.br
+\fC#include <assert\&.h>\fP
+.br
+\fC#include <stdbool\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBdisplay\fP (int **matrix, int n, int m)"
+.br
+.RI "Displays board\&. "
+.ti -1c
+.RI "void \fBnext\fP (int **matrix, int n, int m)"
+.br
+.RI "Returns state of the board at time t+1\&. "
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void display (int ** matrix, int n, int m)"
+
+.PP
+Displays board\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImatrix\fP board 
+.br
+\fIn\fP number of rows 
+.br
+\fIm\fP number of columns
+.RE
+.PP
+This function creates window where it prints the board every 500ms\&. Then it uses \fBnext()\fP functionc to get the next state of the game\&. This process keep repeating until the user presses X on the window\&. 
+.SS "void next (int ** matrix, int n, int m)"
+
+.PP
+Returns state of the board at time t+1\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fImatrix\fP board 
+.br
+\fIn\fP number of rows 
+.br
+\fIm\fP number of columns The matrix signifies the state of board at time t\&. This function creates auxiliary matrix that will contains state of the board at time t+1\&. Rules of the game are applied to the original matrix to fill the auxiliary matrix\&. The the contents of aux matrix are copied to the original one\&. Thus matrix contains state at time t+1 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game Of Life from the source code\&.

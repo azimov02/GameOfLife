@@ -60,7 +60,7 @@ void next(int **matrix, int n,int m){
 void read_file_in_matrix(int**matrix){
     FILE* fp=fopen("matrix.txt","r");
     if (NULL == fp) {
-        fp=fopen("../matrix.txt","r");
+        fp=fopen("./start_configs/heart.txt","r");
     }
     int a=0,b=0;
     char ch;

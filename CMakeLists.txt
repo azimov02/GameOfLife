@@ -8,6 +8,11 @@ include_directories(${SDL2_INCLUDE_DIRS})
 add_executable(gameOfLifeStep3 step3.c)
 add_subdirectory(lib)
 add_subdirectory(tests)
+add_custom_target(
+  doc ALL
+  COMMAND doxygen Doxyfile
+  VERBATIM
+)
 target_include_directories(${PROJECT_NAME} PUBLIC lib)
 target_link_libraries(${PROJECT_NAME} board)
 target_link_libraries(${PROJECT_NAME} readInput)

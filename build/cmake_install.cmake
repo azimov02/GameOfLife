@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/DT/GameOfLife
+# Install script for directory: /home/user/DT/work/GameOfLife
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/user/DT/GameOfLife/build/lib/cmake_install.cmake")
-  include("/home/user/DT/GameOfLife/build/tests/cmake_install.cmake")
+  include("/home/user/DT/work/GameOfLife/build/lib/cmake_install.cmake")
+  include("/home/user/DT/work/GameOfLife/build/tests/cmake_install.cmake")
 
 endif()
 
@@ -52,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/user/DT/GameOfLife/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/user/DT/work/GameOfLife/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/user/DT/GameOfLife/lib/board.h
+/home/user/DT/work/GameOfLife/lib/board.h
 stdio.h
 -
 stdlib.h
@@ -14,7 +14,7 @@ stdlib.h
 unistd.h
 -
 
-/home/user/DT/GameOfLife/lib/readInput.h
+/home/user/DT/work/GameOfLife/lib/readInput.h
 stdio.h
 -
 stdlib.h
@@ -22,7 +22,7 @@ stdlib.h
 unistd.h
 -
 
-/home/user/DT/GameOfLife/step3.c
+/home/user/DT/work/GameOfLife/step3.c
 stdio.h
 -
 stdlib.h
@@ -32,7 +32,7 @@ string.h
 unistd.h
 -
 lib/board.h
-/home/user/DT/GameOfLife/lib/board.h
+/home/user/DT/work/GameOfLife/lib/board.h
 lib/readInput.h
-/home/user/DT/GameOfLife/lib/readInput.h
+/home/user/DT/work/GameOfLife/lib/readInput.h
 

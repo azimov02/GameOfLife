@@ -1,0 +1,56 @@
+\hypertarget{board_8c}{}\doxysection{/home/user/\+D\+T/\+Game\+Of\+Life/lib/board.c File Reference}
+\label{board_8c}\index{/home/user/DT/GameOfLife/lib/board.c@{/home/user/DT/GameOfLife/lib/board.c}}
+{\ttfamily \#include \char`\"{}board.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$S\+D\+L2/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+Include dependency graph for board.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{board_8c_a692247ce3385218b8ca014de90be2911}{display}} (int $\ast$$\ast$matrix, int n, int m)
+\begin{DoxyCompactList}\small\item\em Displays board. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{board_8c_ab79c851b25f3fcaa506d64ba2630b335}{next}} (int $\ast$$\ast$matrix, int n, int m)
+\begin{DoxyCompactList}\small\item\em Returns state of the board at time t+1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{board_8c_a692247ce3385218b8ca014de90be2911}\label{board_8c_a692247ce3385218b8ca014de90be2911}} 
+\index{board.c@{board.c}!display@{display}}
+\index{display@{display}!board.c@{board.c}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void display (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{matrix,  }\item[{int}]{n,  }\item[{int}]{m }\end{DoxyParamCaption})}
+
+
+
+Displays board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & board \\
+\hline
+{\em n} & number of rows \\
+\hline
+{\em m} & number of columns\\
+\hline
+\end{DoxyParams}
+This function creates window where it prints the board every 500ms. Then it uses \mbox{\hyperlink{board_8c_ab79c851b25f3fcaa506d64ba2630b335}{next()}} functionc to get the next state of the game. This process keep repeating until the user presses X on the window. \mbox{\Hypertarget{board_8c_ab79c851b25f3fcaa506d64ba2630b335}\label{board_8c_ab79c851b25f3fcaa506d64ba2630b335}} 
+\index{board.c@{board.c}!next@{next}}
+\index{next@{next}!board.c@{board.c}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily void next (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{matrix,  }\item[{int}]{n,  }\item[{int}]{m }\end{DoxyParamCaption})}
+
+
+
+Returns state of the board at time t+1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & board \\
+\hline
+{\em n} & number of rows \\
+\hline
+{\em m} & number of columns The matrix signifies the state of board at time t. This function creates auxiliary matrix that will contains state of the board at time t+1. Rules of the game are applied to the original matrix to fill the auxiliary matrix. The the contents of aux matrix are copied to the original one. Thus matrix contains state at time t+1 \\
+\hline
+\end{DoxyParams}

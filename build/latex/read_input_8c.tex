@@ -1,0 +1,37 @@
+\hypertarget{read_input_8c}{}\doxysection{/home/user/\+D\+T/\+Game\+Of\+Life/lib/read\+Input.c File Reference}
+\label{read_input_8c}\index{/home/user/DT/GameOfLife/lib/readInput.c@{/home/user/DT/GameOfLife/lib/readInput.c}}
+{\ttfamily \#include \char`\"{}read\+Input.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for read\+Input.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$$\ast$ \mbox{\hyperlink{read_input_8c_a084a962733634a53b4f09efb159d4e64}{read\+\_\+file\+\_\+in\+\_\+matrix}} (char $\ast$filename, int $\ast$n, int $\ast$m)
+\begin{DoxyCompactList}\small\item\em Reads start configuration from txt files and turns it into the matrix of 0 and 1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{read_input_8c_a084a962733634a53b4f09efb159d4e64}\label{read_input_8c_a084a962733634a53b4f09efb159d4e64}} 
+\index{readInput.c@{readInput.c}!read\_file\_in\_matrix@{read\_file\_in\_matrix}}
+\index{read\_file\_in\_matrix@{read\_file\_in\_matrix}!readInput.c@{readInput.c}}
+\doxysubsubsection{\texorpdfstring{read\_file\_in\_matrix()}{read\_file\_in\_matrix()}}
+{\footnotesize\ttfamily int$\ast$$\ast$ read\+\_\+file\+\_\+in\+\_\+matrix (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename,  }\item[{int $\ast$}]{n,  }\item[{int $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Reads start configuration from txt files and turns it into the matrix of 0 and 1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the name of the configuration \\
+\hline
+{\em n} & number of rows \\
+\hline
+{\em m} & number of columns \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$$\ast$ returns pointer to the created matrix
+\end{DoxyReturn}
+This function gets as parameters the name of file which contains one of possible start configurations of the game. Then it allocates memory to create a matrix and copy the contents of the file to that matrix. In addition it writes the values of rows and colums to n and m. In case if file was not found it returns N\+U\+LL pointer. 

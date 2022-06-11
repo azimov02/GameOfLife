@@ -1,0 +1,102 @@
+\hypertarget{test_8c}{}\doxysection{/home/user/\+D\+T/\+Game\+Of\+Life/tests/test.c File Reference}
+\label{test_8c}\index{/home/user/DT/GameOfLife/tests/test.c@{/home/user/DT/GameOfLife/tests/test.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$sys/wait.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}C\+Unit/\+Basic.\+h\char`\"{}}\newline
+Include dependency graph for test.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{test_8c_adbe9ed2336f6d7fca6d81bf3314f5e08}{read\+\_\+file\+\_\+in\+\_\+matrix}} (int $\ast$$\ast$matrix)
+\item 
+void \mbox{\hyperlink{test_8c_ab79c851b25f3fcaa506d64ba2630b335}{next}} (int $\ast$$\ast$matrix, int n, int m)
+\item 
+void \mbox{\hyperlink{test_8c_a4c17ec5b0627d1394d592816bfbe7c20}{print}} (int $\ast$$\ast$matrix, int n, int m)
+\item 
+int \mbox{\hyperlink{test_8c_a736aee61f9f1e8c0ba3aa9734cd13b5d}{init\+\_\+suite1}} (void)
+\item 
+int \mbox{\hyperlink{test_8c_ac8dcdd2549f2c6bee1c950bb827b8347}{clean\+\_\+suite1}} (void)
+\item 
+void \mbox{\hyperlink{test_8c_a75450be0e0ddff0c77ac8076bc1f80fd}{test\+P\+R\+I\+NT}} (void)
+\begin{DoxyCompactList}\small\item\em Tests \mbox{\hyperlink{test_8c_a4c17ec5b0627d1394d592816bfbe7c20}{print()}} function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test_8c_ac9007c345fdf90a84f9d431d65cb2ce3}{test\+N\+E\+XT}} (void)
+\begin{DoxyCompactList}\small\item\em Tests \mbox{\hyperlink{test_8c_ab79c851b25f3fcaa506d64ba2630b335}{next()}} function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test_8c_afad754259af231f59623bd2b3474320c}{test\+R\+E\+A\+D\+\_\+\+F\+I\+L\+E\+\_\+\+I\+N\+\_\+\+M\+A\+T\+R\+IX}} ()
+\begin{DoxyCompactList}\small\item\em Tests \mbox{\hyperlink{test_8c_adbe9ed2336f6d7fca6d81bf3314f5e08}{read\+\_\+file\+\_\+in\+\_\+matrix()}} function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{test_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{test_8c_ac8dcdd2549f2c6bee1c950bb827b8347}\label{test_8c_ac8dcdd2549f2c6bee1c950bb827b8347}} 
+\index{test.c@{test.c}!clean\_suite1@{clean\_suite1}}
+\index{clean\_suite1@{clean\_suite1}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{clean\_suite1()}{clean\_suite1()}}
+{\footnotesize\ttfamily int clean\+\_\+suite1 (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test_8c_a736aee61f9f1e8c0ba3aa9734cd13b5d}\label{test_8c_a736aee61f9f1e8c0ba3aa9734cd13b5d}} 
+\index{test.c@{test.c}!init\_suite1@{init\_suite1}}
+\index{init\_suite1@{init\_suite1}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{init\_suite1()}{init\_suite1()}}
+{\footnotesize\ttfamily int init\+\_\+suite1 (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{test_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{test.c@{test.c}!main@{main}}
+\index{main@{main}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test_8c_ab79c851b25f3fcaa506d64ba2630b335}\label{test_8c_ab79c851b25f3fcaa506d64ba2630b335}} 
+\index{test.c@{test.c}!next@{next}}
+\index{next@{next}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily void next (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{matrix,  }\item[{int}]{n,  }\item[{int}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test_8c_a4c17ec5b0627d1394d592816bfbe7c20}\label{test_8c_a4c17ec5b0627d1394d592816bfbe7c20}} 
+\index{test.c@{test.c}!print@{print}}
+\index{print@{print}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void print (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{matrix,  }\item[{int}]{n,  }\item[{int}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test_8c_adbe9ed2336f6d7fca6d81bf3314f5e08}\label{test_8c_adbe9ed2336f6d7fca6d81bf3314f5e08}} 
+\index{test.c@{test.c}!read\_file\_in\_matrix@{read\_file\_in\_matrix}}
+\index{read\_file\_in\_matrix@{read\_file\_in\_matrix}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{read\_file\_in\_matrix()}{read\_file\_in\_matrix()}}
+{\footnotesize\ttfamily int read\+\_\+file\+\_\+in\+\_\+matrix (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{matrix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{test_8c_ac9007c345fdf90a84f9d431d65cb2ce3}\label{test_8c_ac9007c345fdf90a84f9d431d65cb2ce3}} 
+\index{test.c@{test.c}!testNEXT@{testNEXT}}
+\index{testNEXT@{testNEXT}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{testNEXT()}{testNEXT()}}
+{\footnotesize\ttfamily void test\+N\+E\+XT (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Tests \mbox{\hyperlink{test_8c_ab79c851b25f3fcaa506d64ba2630b335}{next()}} function. 
+
+test\+N\+E\+XT function tests whether matrix will be filled correctly and won\textquotesingle{}t return N\+U\+LL after function call \mbox{\Hypertarget{test_8c_a75450be0e0ddff0c77ac8076bc1f80fd}\label{test_8c_a75450be0e0ddff0c77ac8076bc1f80fd}} 
+\index{test.c@{test.c}!testPRINT@{testPRINT}}
+\index{testPRINT@{testPRINT}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{testPRINT()}{testPRINT()}}
+{\footnotesize\ttfamily void test\+P\+R\+I\+NT (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Tests \mbox{\hyperlink{test_8c_a4c17ec5b0627d1394d592816bfbe7c20}{print()}} function. 
+
+test\+P\+R\+I\+NT function tests whether matrix will be successfully printed and won\textquotesingle{}t be null \mbox{\Hypertarget{test_8c_afad754259af231f59623bd2b3474320c}\label{test_8c_afad754259af231f59623bd2b3474320c}} 
+\index{test.c@{test.c}!testREAD\_FILE\_IN\_MATRIX@{testREAD\_FILE\_IN\_MATRIX}}
+\index{testREAD\_FILE\_IN\_MATRIX@{testREAD\_FILE\_IN\_MATRIX}!test.c@{test.c}}
+\doxysubsubsection{\texorpdfstring{testREAD\_FILE\_IN\_MATRIX()}{testREAD\_FILE\_IN\_MATRIX()}}
+{\footnotesize\ttfamily void test\+R\+E\+A\+D\+\_\+\+F\+I\+L\+E\+\_\+\+I\+N\+\_\+\+M\+A\+T\+R\+IX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tests \mbox{\hyperlink{test_8c_adbe9ed2336f6d7fca6d81bf3314f5e08}{read\+\_\+file\+\_\+in\+\_\+matrix()}} function. 
+
+test\+R\+E\+A\+D\+\_\+\+F\+I\+L\+E\+\_\+\+I\+N\+\_\+\+M\+A\+T\+R\+IX function tests whether matrix will be successfully filled from one of the start configuration files 

@@ -1,0 +1,79 @@
+\begin{theindex}
+
+  \item {/home/user/DT/GameOfLife/lib/board.c}, \hyperpage{3}
+  \item {/home/user/DT/GameOfLife/lib/readInput.c}, \hyperpage{3}
+  \item {/home/user/DT/GameOfLife/step3.c}, \hyperpage{4}
+  \item {/home/user/DT/GameOfLife/tests/test.c}, \hyperpage{4}
+  \item {/home/user/DT/GameOfLife/version1.c}, \hyperpage{6}
+
+  \indexspace
+
+  \item {clean\_suite1}
+    \subitem {test.c}, \hyperpage{5}
+
+  \indexspace
+
+  \item {init\_suite1}
+    \subitem {test.c}, \hyperpage{5}
+
+  \indexspace
+
+  \item {main}
+    \subitem {step3.c}, \hyperpage{4}
+    \subitem {test.c}, \hyperpage{5}
+    \subitem {version1.c}, \hyperpage{7}
+
+  \indexspace
+
+  \item {next}
+    \subitem {test.c}, \hyperpage{5}
+    \subitem {version1.c}, \hyperpage{7}
+
+  \indexspace
+
+  \item {print}
+    \subitem {test.c}, \hyperpage{5}
+    \subitem {version1.c}, \hyperpage{7}
+
+  \indexspace
+
+  \item {read\_file\_in\_matrix}
+    \subitem {readInput.c}, \hyperpage{3}
+    \subitem {test.c}, \hyperpage{6}
+    \subitem {version1.c}, \hyperpage{7}
+  \item {readInput.c}
+    \subitem {read\_file\_in\_matrix}, \hyperpage{3}
+
+  \indexspace
+
+  \item {step3.c}
+    \subitem {main}, \hyperpage{4}
+
+  \indexspace
+
+  \item {test.c}
+    \subitem {clean\_suite1}, \hyperpage{5}
+    \subitem {init\_suite1}, \hyperpage{5}
+    \subitem {main}, \hyperpage{5}
+    \subitem {next}, \hyperpage{5}
+    \subitem {print}, \hyperpage{5}
+    \subitem {read\_file\_in\_matrix}, \hyperpage{6}
+    \subitem {testNEXT}, \hyperpage{6}
+    \subitem {testPRINT}, \hyperpage{6}
+    \subitem {testREAD\_FILE\_IN\_MATRIX}, \hyperpage{6}
+  \item {testNEXT}
+    \subitem {test.c}, \hyperpage{6}
+  \item {testPRINT}
+    \subitem {test.c}, \hyperpage{6}
+  \item {testREAD\_FILE\_IN\_MATRIX}
+    \subitem {test.c}, \hyperpage{6}
+
+  \indexspace
+
+  \item {version1.c}
+    \subitem {main}, \hyperpage{7}
+    \subitem {next}, \hyperpage{7}
+    \subitem {print}, \hyperpage{7}
+    \subitem {read\_file\_in\_matrix}, \hyperpage{7}
+
+\end{theindex}

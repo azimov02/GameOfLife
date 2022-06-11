@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/user/DT/GameOfLife/build"
+			"value" : "/home/user/DT/work/GameOfLife/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -595,7 +595,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/user/DT/GameOfLife"
+			"value" : "/home/user/DT/work/GameOfLife"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1203,7 +1203,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/user/DT/GameOfLife/build"
+			"value" : "/home/user/DT/work/GameOfLife/build"
 		},
 		{
 			"name" : "gameOfLifeStep3_SOURCE_DIR",
@@ -1215,7 +1215,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/user/DT/GameOfLife"
+			"value" : "/home/user/DT/work/GameOfLife"
 		}
 	],
 	"kind" : "cache",

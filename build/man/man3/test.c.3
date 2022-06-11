@@ -1,0 +1,86 @@
+.TH "/home/user/DT/GameOfLife/tests/test.c" 3 "Sat Jun 11 2022" "Game Of Life" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/user/DT/GameOfLife/tests/test.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <unistd\&.h>\fP
+.br
+\fC#include <sys/wait\&.h>\fP
+.br
+\fC#include <fcntl\&.h>\fP
+.br
+\fC#include 'CUnit/Basic\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBread_file_in_matrix\fP (int **matrix)"
+.br
+.ti -1c
+.RI "void \fBnext\fP (int **matrix, int n, int m)"
+.br
+.ti -1c
+.RI "void \fBprint\fP (int **matrix, int n, int m)"
+.br
+.ti -1c
+.RI "int \fBinit_suite1\fP (void)"
+.br
+.ti -1c
+.RI "int \fBclean_suite1\fP (void)"
+.br
+.ti -1c
+.RI "void \fBtestPRINT\fP (void)"
+.br
+.RI "Tests \fBprint()\fP function\&. "
+.ti -1c
+.RI "void \fBtestNEXT\fP (void)"
+.br
+.RI "Tests \fBnext()\fP function\&. "
+.ti -1c
+.RI "void \fBtestREAD_FILE_IN_MATRIX\fP ()"
+.br
+.RI "Tests \fBread_file_in_matrix()\fP function\&. "
+.ti -1c
+.RI "int \fBmain\fP ()"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int clean_suite1 (void)"
+
+.SS "int init_suite1 (void)"
+
+.SS "int main ()"
+
+.SS "void next (int ** matrix, int n, int m)"
+
+.SS "void print (int ** matrix, int n, int m)"
+
+.SS "int read_file_in_matrix (int ** matrix)"
+
+.SS "void testNEXT (void)"
+
+.PP
+Tests \fBnext()\fP function\&. testNEXT function tests whether matrix will be filled correctly and won't return NULL after function call 
+.SS "void testPRINT (void)"
+
+.PP
+Tests \fBprint()\fP function\&. testPRINT function tests whether matrix will be successfully printed and won't be null 
+.SS "void testREAD_FILE_IN_MATRIX ()"
+
+.PP
+Tests \fBread_file_in_matrix()\fP function\&. testREAD_FILE_IN_MATRIX function tests whether matrix will be successfully filled from one of the start configuration files 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game Of Life from the source code\&.

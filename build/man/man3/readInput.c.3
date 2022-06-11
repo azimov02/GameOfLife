@@ -1,0 +1,46 @@
+.TH "/home/user/DT/GameOfLife/lib/readInput.c" 3 "Sat Jun 11 2022" "Game Of Life" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/user/DT/GameOfLife/lib/readInput.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'readInput\&.h'\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int ** \fBread_file_in_matrix\fP (char *filename, int *n, int *m)"
+.br
+.RI "Reads start configuration from txt files and turns it into the matrix of 0 and 1\&. "
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int** read_file_in_matrix (char * filename, int * n, int * m)"
+
+.PP
+Reads start configuration from txt files and turns it into the matrix of 0 and 1\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfilename\fP the name of the configuration 
+.br
+\fIn\fP number of rows 
+.br
+\fIm\fP number of columns 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int** returns pointer to the created matrix
+.RE
+.PP
+This function gets as parameters the name of file which contains one of possible start configurations of the game\&. Then it allocates memory to create a matrix and copy the contents of the file to that matrix\&. In addition it writes the values of rows and colums to n and m\&. In case if file was not found it returns NULL pointer\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Game Of Life from the source code\&.

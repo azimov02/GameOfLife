@@ -6,5 +6,5 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/user/DT/GameOfLife/lib -isystem /usr/local/include/SDL2 
+C_INCLUDES = -I/home/user/DT/work/GameOfLife/lib -isystem /usr/local/include/SDL2 
 
