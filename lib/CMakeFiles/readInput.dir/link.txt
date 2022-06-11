@@ -1,0 +1,2 @@
+/usr/bin/ar qc libreadInput.a  CMakeFiles/readInput.dir/readInput.c.o
+/usr/bin/ranlib libreadInput.a

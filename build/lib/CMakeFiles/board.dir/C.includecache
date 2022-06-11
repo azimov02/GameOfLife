@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/user/DT/GameOfLife/lib/board.c
+board.h
+/home/user/DT/GameOfLife/lib/board.h
+SDL2/SDL.h
+-
+assert.h
+-
+stdbool.h
+-
+
+/home/user/DT/GameOfLife/lib/board.h
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+
